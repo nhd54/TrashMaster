@@ -1,0 +1,11 @@
+h1 {
+    color: #F6A117;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.score {
+    background-color: #F6A117;
+    height: 100px;
+    width: 100%;
+}
