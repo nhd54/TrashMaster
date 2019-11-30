@@ -12,6 +12,8 @@ import { GameComponent } from "./component/game/game.component";
 import { EndgameComponent } from "./component/endgame/endgame.component";
 import { HighscoreComponent } from "./component/highscore/highscore.component";
 import { ScoreComponent } from "./component/score/score.component";
+import { TimeComponent } from "./component/time/time.component";
+
 
 
 const routes: Routes = [
@@ -25,7 +27,9 @@ const routes: Routes = [
   {path: 'game' , component: GameComponent},
   {path: 'endgame' , component: EndgameComponent},
   {path: 'highscore' , component: HighscoreComponent},
-  {path: 'score' , component: ScoreComponent}
+  {path: 'score' , component: ScoreComponent},
+  {path: 'time' , component: TimeComponent}
+
 
 ];
 
