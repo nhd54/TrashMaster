@@ -1,0 +1,30 @@
+.body{
+    background-color: #1f1436;
+    height: 100vh;
+    width: 100%;
+}
+
+.burger-menu{
+    color: #f6a117;
+    font-size: 50px;
+    text-align: right;
+}
+
+
+.menu{
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #ef492e;
+    border-color: #ef492e;
+    border-radius: 20px;
+    height: 50px;
+    width: 200px;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
