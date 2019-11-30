@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+}
+
+.tm-background {
+    background-color: #1F1436;
+}
+
+.font-heading {
+    text-transform: uppercase;
+    text-align: center;
+    color: #F6A117;
+    /*font-family: ; */
+    font-size: 3.5em;
+}
