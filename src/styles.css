@@ -1,17 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,800&display=swap');
 
 body {
     margin: 0;
-}
-
-.tm-background {
     background-color: #1F1436;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
-.font-heading {
+h1 {
     text-transform: uppercase;
     text-align: center;
     color: #F6A117;
-    /*font-family: ; */
-    font-size: 3.5em;
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 40px;
+    padding: 80px 10px 10px 10px;
 }
