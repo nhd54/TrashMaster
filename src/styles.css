@@ -21,3 +21,21 @@ h1 {
 p {
     color: #fff;
 }
+
+.btn-primary {
+    color: #fff;
+    background-color: #ef492e;
+    border-color: #ef492e;
+    border-radius: 20px;
+    height: 50px;
+    width: 200px;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.burger-menu{
+    color: #f6a117;
+    font-size: 50px;
+    text-align: right;
+}
