@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,400,800&display=swap');
+
+body {
+    height: 390vh; width: 100%;
+    background-color: #1F1436;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1 {
+    color: #F6A117;
+    padding: 80px 10px 10px 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 40px;
+}
+ 
+.timeout {
+    color: #EF492E;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+.icontrash {
+    color: #707070;
+    font-size: 90px;
+    text-align: center;
+    padding: 40px 30px 10px 30px;
+}
+
+.iconheart {
+    color: #EF492E;
+    font-size: 75px;
+    text-align: center;
+    padding: 40px 30px 10px 30px;
+}
+
+.text {
+    text-align: center;
+    padding: 50px 50px 10px 50px;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 25px;
+    font-weight: lighter;
+}
+
+.buttons {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.btn-primary {
+    background-color:#EF492E;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.icon {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.fontcolorspeciel {
+    text-align: center;
+    padding: 20px 50px 10px 50px;
+    font-size: 18px;
+    color: #F6A117;
+    line-height: 25px;
+    font-weight: bolder;
+}
+
+.buttons {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.btn-primary {
+    background-color:#EF492E;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+
