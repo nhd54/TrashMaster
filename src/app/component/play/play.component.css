@@ -15,6 +15,7 @@ main {
 	border: 2px solid #f6a117;
 	margin-top: 50%;
 	padding: 10px;
+	width: 50px;
 }
 
 .item-text {
@@ -38,7 +39,7 @@ ul {
 	margin: 0 !important;
 }
 
-.trashes {
+.trash {
 	padding: 0 !important;
 	margin: 0 !important;
 }
