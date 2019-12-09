@@ -9,11 +9,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.icons {
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 10px;
 }
 
 h1 {
-    margin-bottom: 60px;
+    color: #F6A117;
+    padding: 0px 10px 50px 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 40px;
 }
+
 
 .col-sm {
     text-align: center;
@@ -30,14 +48,19 @@ h1 {
     margin: 10px 0;
 }
 
-button {
-    text-transform: none;
-    font-size: 1.7em;
-    padding: 10px 60px 15px 60px;
-    border-radius: 20px;
+.buttons {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.btn-primary {
+    background-color:#EF492E;
+    font-size: 20px;
+    font-weight: bold;
     border: none;
-    color: #fff;
-    background-color: #EF492E;
-    margin-top: 50px;
-    cursor: pointer;
+    text-align: center;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 15px;
 }

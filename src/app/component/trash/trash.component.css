@@ -1,10 +1,9 @@
-ul {
-    margin: 0 !important;
-    padding: 0 !important;
+
+.trash--img {
+	width: 80%;
 }
 
-.trashes--img {
-    width: 80%;
-    display: block;
-    margin: 0 auto;
+.trashes {
+	padding: 0 0 10px 0 !important;
+	margin: 0 !important;
 }

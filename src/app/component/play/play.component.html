@@ -1,44 +1,54 @@
 <main class="container-fluid tm-background">
- 
-    <header>
-        
-        <div class="justify-content-center logo border-bot row">
-            <img src="../../../assets/img/logo.png"  alt="">
+
+  <header>
+    <div class="justify-content-center logo border-bot row">
+      <img src="../../../assets/img/logo.png" alt="" />
+    </div>
+    <div class="gameinfo border-bot row">
+      <div class="col-4 d-flex gameicons justify-content-start">
+        <app-time></app-time>
+      </div>
+      <div class="col-4 d-flex gameicons justify-content-center">
+        <app-life class="row"></app-life>
+      </div>
+      <div class="col-4 d-flex gameicons justify-content-end">
+        <app-score></app-score>
+      </div>
+    </div>
+  </header>
+
+  <section class="gamescreen row">
+    <!--Next items-->
+    <div class="nextitem row justify-content-end col-12">
+      <span class="item">
+        <div class="item-img">
+            <app-nextitem class="row justify-content-center"></app-nextitem>
         </div>
-        <div class="gameinfo border-bot row">
-            <div class="col-4 d-flex justify-content-center">
-                <app-time></app-time>
-            </div>
+        <p class="item-text">Next item</p>
+      </span>
+    </div>
+    <!--current item-->
+    <ul class="current row justify-content-center align-content-center col-12">
+      <li class="currentitem">
+          <app-currentitem class="row justify-content-center"></app-currentitem>
+        </li>
+    </ul>
 
-            <div class="col-4 d-flex justify-content-center">
-                <app-life></app-life>
-            </div>
-
-            <div class="col-4 d-flex justify-content-center">
-                <app-score></app-score>
-            </div>
-        </div>       
-    </header>
-
-    <section class="gamescreen row">
-
-         <!--Next items-->      
-        <div class="nextitem row justify-content-end col-12">
-            <span class="item">
-            <div class="item-img"><app-nextitem></app-nextitem></div>
-            <p class="item-text">Next item</p>
-            </span>
-        </div>   
-        <!--current item-->
-        <ul class="current row justify-content-center align-content-center col-12">
-            <li class="currentitem"><app-currentitem></app-currentitem></li>
-        </ul>
-
-        <!--Trashes-->
-       
-           <app-trash class="col-12"></app-trash>
-        
-    </section>
-
+    <!--Trashes-->
+    <app-trash class="trash col-12 row"></app-trash>
+   
+  </section>
 </main>
+<div class="popup container-fluid">
 
+    <section class="row buttons justify-content-center align-content-center">
+        <h2 class="gameover col-12">Game Over</h2>
+           <a href="level">
+             <button type="button" class="btn btn-primary">How to play</button>
+            </a>
+            <a href="level">
+              <button type="button" class="btn btn-primary">Skip to game</button>
+           </a>
+    </section>
+        
+</div>
