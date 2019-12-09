@@ -2,8 +2,12 @@ main {
 	min-height: 100vh;
 }
 
+.gameicons {
+	padding: 0 !important;
+}
+
 .border-bot {
-	border-bottom: 2px solid #f6a117;
+	border-bottom: 4px solid #f6a117;
 	margin: 0 !important;
 }
 
@@ -11,6 +15,7 @@ main {
 	border: 2px solid #f6a117;
 	margin-top: 50%;
 	padding: 10px;
+	width: 50px;
 }
 
 .item-text {
@@ -19,7 +24,9 @@ main {
 }
 
 .logo img {
-	width: 20%;
+	width: 32%;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 ul {
@@ -32,7 +39,7 @@ ul {
 	margin: 0 !important;
 }
 
-.trashes {
+.trash {
 	padding: 0 !important;
 	margin: 0 !important;
 }
