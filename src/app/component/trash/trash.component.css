@@ -1,0 +1,10 @@
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.trashes--img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
