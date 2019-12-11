@@ -38,7 +38,7 @@ export class PlayComponent implements OnInit {
         var data = ev.dataTransfer.getData('text');
 
         var currentitem = document.querySelector('.dragable-img').getAttribute('data-id');
-        console.log(ev.target.getAttribute('data-id'));
+        //console.log(ev.target.getAttribute('data-id'));
 
         if (ev.target.getAttribute('data-id') == currentitem) {
 			console.log('point given');
