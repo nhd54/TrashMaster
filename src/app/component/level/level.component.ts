@@ -28,7 +28,7 @@ export class LevelComponent implements OnInit {
   }
 
 
-  /* DO NOT TOUCH THE "ERRORS THEY ARE NOT ERRORS" */
+  /* DO NOT TOUCH THE "ERRORS" THEY ARE NOT ERRORS */
   changeColor(x) {
     var x;
     if(x == 0) {
