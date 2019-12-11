@@ -21,6 +21,7 @@ import { TrashComponent } from './component/trash/trash.component';
 import { TimeComponent } from './component/time/time.component';
 import { HighscoreComponent } from './component/highscore/highscore.component';
 import { EndgameComponent } from './component/endgame/endgame.component';
+import { DataService } from './component/data.service';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,7 @@ import { EndgameComponent } from './component/endgame/endgame.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

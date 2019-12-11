@@ -1,3 +1,13 @@
 .icon {
     padding-top: 10px;
+    position: relative;
+}
+
+.icon span {
+    font-size: 2em;
+    font-weight: bold;
+    color: #EF492E;
+    position: absolute;
+    left: calc(50% - 0.6em);
+    top: calc(50% - 0.4em);
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-currentitem',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CurrentitemComponent implements OnInit {
 
-  constructor() { }
+  score : number;
+
+  constructor( private data: DataService ) { }
+
+  scoreAdd(){
+    this.data.changeScore(1);
+  }
 
   ngOnInit() {
+    this.data.currentScore.subscribe(score => this.score = score)
   }
 
 }
