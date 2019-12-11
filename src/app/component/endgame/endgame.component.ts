@@ -8,12 +8,12 @@ import { DataService } from '../data.service';
 })
 export class EndgameComponent implements OnInit {
 
-  score : number; 
+  egscore : number; 
 
   constructor( private data: DataService ) { }
 
   ngOnInit() {
-    this.data.currentScore.subscribe(score => this.score = score)
+    this.data.currentScore.subscribe(score => this.egscore = score)
   }
 
 }

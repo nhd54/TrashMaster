@@ -27,6 +27,8 @@ export class LevelComponent implements OnInit {
     console.log(this.gameDifficulty);
   }
 
+
+  /* DO NOT TOUCH THE "ERRORS THEY ARE NOT ERRORS" */
   changeColor(x) {
     var x;
     if(x == 0) {
