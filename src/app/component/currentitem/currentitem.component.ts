@@ -7,15 +7,22 @@ import { DataService } from '../data.service';
 	styleUrls: [ './currentitem.component.css' ]
 })
 export class CurrentitemComponent implements OnInit {
-	score: number;
 
-	constructor(private data: DataService) {}
+  ciscore : number;
 
-	scoreAdd() {
-		this.data.changeScore(1);
-	}
+  constructor( private data: DataService ) { }
 
-	ngOnInit() {
-		this.data.currentScore.subscribe((score) => (this.score = score));
-	}
+  scoreAdd() {
+    this.ciscore++;
+    this.scoreUpdate(this.ciscore);
+  }
+
+  scoreUpdate(x){
+    this.data.changeScore(x);
+  }
+
+  ngOnInit() {
+    this.data.currentScore.subscribe(score => this.ciscore = score)
+  }
+
 }
