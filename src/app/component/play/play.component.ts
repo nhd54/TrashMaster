@@ -56,6 +56,8 @@ export class PlayComponent implements OnInit {
 		let difficulty;
 		let url = window.location.href;
 
+		console.log(document.querySelector('.trashes--item'));
+
 		difficulty = url.replace(/\/+$/, '').split('=').pop();
 
 		let medIcons = document.getElementsByClassName('diffMed');
