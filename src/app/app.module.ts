@@ -21,36 +21,32 @@ import { TrashComponent } from './component/trash/trash.component';
 import { TimeComponent } from './component/time/time.component';
 import { HighscoreComponent } from './component/highscore/highscore.component';
 import { EndgameComponent } from './component/endgame/endgame.component';
+import { NgDragDropModule } from '../../node_modules/ng-drag-drop';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MenuComponent,
-    StartComponent,
-    BurgerComponent,
-    PopupComponent,
-    AboutComponent,
-    GamepopupComponent,
-    PlayComponent,
-    LevelComponent,
-    CountdownComponent,
-    GameComponent,
-    LifeComponent,
-    ScoreComponent,
-    NextitemComponent,
-    CurrentitemComponent,
-    TrashComponent,
-    TimeComponent,
-    HighscoreComponent,
-    EndgameComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		MenuComponent,
+		StartComponent,
+		BurgerComponent,
+		PopupComponent,
+		AboutComponent,
+		GamepopupComponent,
+		PlayComponent,
+		LevelComponent,
+		CountdownComponent,
+		GameComponent,
+		LifeComponent,
+		ScoreComponent,
+		NextitemComponent,
+		CurrentitemComponent,
+		TrashComponent,
+		TimeComponent,
+		HighscoreComponent,
+		EndgameComponent
+	],
+	imports: [ BrowserModule, AppRoutingModule, NgDragDropModule.forRoot() ],
+	providers: [],
+	bootstrap: [ AppComponent ]
 })
-export class AppModule { }
-
-
+export class AppModule {}

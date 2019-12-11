@@ -79,3 +79,56 @@ ul {
 	font-size: 50px;
 	font-weight: 800;
 }
+
+body {
+	font-family: 'Cabin', sans-serif;
+}
+
+.box {
+	height: 200px;
+	margin: 40px;
+	width: 200px;
+}
+
+.box#box1 {
+	background-color: #cff5f7;
+}
+.box#box2 {
+	background-color: #f5edb2;
+}
+.box#box3 {
+	background-color: #cfeec4;
+}
+.box#box4 {
+	background-color: #f9c7c9;
+}
+
+.container {
+	justify-content: center;
+	margin-top: 2.5%;
+}
+
+#container2 {
+	margin-top: 0;
+}
+
+.contents {
+	height: 200px;
+	width: 200px;
+}
+
+.contents span {
+	font-size: 30px;
+	line-height: 200px;
+	margin-left: 20%;
+	vertical-align: middle;
+}
+
+.flex_row {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
