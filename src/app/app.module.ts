@@ -52,3 +52,5 @@ import { EndgameComponent } from './component/endgame/endgame.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

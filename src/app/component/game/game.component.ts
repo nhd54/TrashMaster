@@ -9,7 +9,7 @@ export class GameComponent implements OnInit {
 	constructor() {}
 
 	removePopup() {
-		console.log('test');
+		document.querySelector('.popup').classList.add('hide');
 	}
 
 	ngOnInit() {}
