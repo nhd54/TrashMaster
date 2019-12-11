@@ -21,7 +21,7 @@ import { TrashComponent } from './component/trash/trash.component';
 import { TimeComponent } from './component/time/time.component';
 import { HighscoreComponent } from './component/highscore/highscore.component';
 import { EndgameComponent } from './component/endgame/endgame.component';
-import { NgDragDropModule } from '../../node_modules/ng-drag-drop';
+import { DataService } from './component/data.service';
 
 @NgModule({
 	declarations: [
@@ -45,8 +45,8 @@ import { NgDragDropModule } from '../../node_modules/ng-drag-drop';
 		HighscoreComponent,
 		EndgameComponent
 	],
-	imports: [ BrowserModule, AppRoutingModule, NgDragDropModule.forRoot() ],
-	providers: [],
+	imports: [ BrowserModule, AppRoutingModule ],
+	providers: [ DataService ],
 	bootstrap: [ AppComponent ]
 })
 export class AppModule {}
