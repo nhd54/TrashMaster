@@ -23,23 +23,21 @@ export class PlayComponent implements OnInit {
 		console.log('test3');
 		ev.preventDefault();
 		var data = ev.dataTransfer.getData('text');
-		console.log(data);
 
 		var currentitem = document.querySelector('.dragable-img').getAttribute('data-id');
-		var righttrash = document.querySelector('#div2').getAttribute('data-id');
-		console.log(ev.target);
 
-		if (righttrash == currentitem) {
+		if (ev.target.getAttribute('data-id') == currentitem) {
 			console.log('point given');
 		} else {
 			console.log('point ikke given');
 		}
-		console.log(righttrash);
 	}
 
 	ngOnInit() {
 		let difficulty;
 		let url = window.location.href;
+
+		console.log(document.querySelector('.trashes--item'));
 
 		difficulty = url.replace(/\/+$/, '').split('=').pop();
 
