@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
 	selector: 'app-play',
@@ -6,38 +7,52 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: [ './play.component.css' ]
 })
 export class PlayComponent implements OnInit {
-	constructor() {}
+	
+	ciscore : number;
+	
+	constructor( private data: DataService ) {}
+
+	scoreAdd() {
+		this.ciscore++;
+		this.scoreUpdate(this.ciscore);
+	}
+	
+	scoreUpdate(x){
+		this.data.changeScore(x);
+	}
 
 	allowDrop(ev) {
-		console.log('test1');
+		//console.log('test1');
 		ev.preventDefault();
 	}
 
 	drag(ev) {
-		console.log('test2');
+		//console.log('test2');
 
 		ev.dataTransfer.setData('text', ev.target.id);
 	}
 
 	drop(ev) {
-		console.log('test3');
-		ev.preventDefault();
-		var data = ev.dataTransfer.getData('text');
-		console.log(data);
+		//console.log('test3');
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData('text');
 
-		var currentitem = document.querySelector('.dragable-img').getAttribute('data-id');
-		var righttrash = document.querySelector('#div2').getAttribute('data-id');
-		console.log(ev.target);
+        var currentitem = document.querySelector('.dragable-img').getAttribute('data-id');
+        console.log(ev.target.getAttribute('data-id'));
 
-		if (righttrash == currentitem) {
+        if (ev.target.getAttribute('data-id') == currentitem) {
 			console.log('point given');
-		} else {
-			console.log('point ikke given');
-		}
-		console.log(righttrash);
+			this.scoreAdd();
+        } else {
+            console.log('point ikke given');
+        }
 	}
 
 	ngOnInit() {
+		this.data.currentScore.subscribe(score => this.ciscore = score)
+
+
+
 		let difficulty;
 		let url = window.location.href;
 

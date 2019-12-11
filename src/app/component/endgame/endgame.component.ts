@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-endgame',
@@ -8,12 +7,16 @@ import { DataService } from '../data.service';
 })
 export class EndgameComponent implements OnInit {
 
-  egscore : number; 
+  score;
 
-  constructor( private data: DataService ) { }
+  constructor() { }
 
   ngOnInit() {
-    this.data.currentScore.subscribe(score => this.egscore = score)
+    let url = window.location.href;
+
+    this.score = url.replace(/\/+$/, '').split('=').pop();
+
+
   }
 
 }

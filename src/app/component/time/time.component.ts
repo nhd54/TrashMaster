@@ -31,7 +31,6 @@ export class TimeComponent implements OnInit {
 			} else {
 				this.seconds = this.seconds - 1;
 				this.secondsshwon = this.seconds;
-				console.log(this.score);
 				if (this.seconds < 10) {
 					this.secondsshwon = '0' + this.seconds;
 				}

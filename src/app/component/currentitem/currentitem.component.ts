@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
+/* import { DataService } from '../data.service'; */
 
 @Component({
 	selector: 'app-currentitem',
@@ -8,21 +8,22 @@ import { DataService } from '../data.service';
 })
 export class CurrentitemComponent implements OnInit {
 
-  ciscore : number;
+  /* ciscore : number; */
 
-  constructor( private data: DataService ) { }
+  constructor(/*  private data: DataService  */) { }
 
-  scoreAdd() {
+  /* scoreAdd() {
     this.ciscore++;
     this.scoreUpdate(this.ciscore);
   }
 
   scoreUpdate(x){
     this.data.changeScore(x);
-  }
+  } */
 
   ngOnInit() {
-    this.data.currentScore.subscribe(score => this.ciscore = score)
+    /* this.data.currentScore.subscribe(score => this.ciscore = score) */
   }
 
 }
+ 

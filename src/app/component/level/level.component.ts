@@ -32,19 +32,19 @@ export class LevelComponent implements OnInit {
   changeColor(x) {
     var x;
     if(x == 0) {
-      document.querySelector("#iconEasy").src = "../assets/img/trash3.svg";
-      document.querySelector("#iconMed").src = "../assets/img/trashgrey.svg";
-      document.querySelector("#iconHard").src = "../assets/img/trashgrey.svg";
+      document.querySelector("#iconEasy").setAttribute("src", "../assets/img/trash3.svg");
+      document.querySelector("#iconMed").setAttribute("src", "../assets/img/trashgrey.svg");
+      document.querySelector("#iconHard").setAttribute("src", "../assets/img/trashgrey.svg");
     }
     if(x == 1) {
-      document.querySelector("#iconEasy").src = "../assets/img/trashgrey.svg";
-      document.querySelector("#iconMed").src = "../assets/img/trash3.svg";
-      document.querySelector("#iconHard").src = "../assets/img/trashgrey.svg";
+      document.querySelector("#iconEasy").setAttribute("src", "../assets/img/trashgrey.svg");
+      document.querySelector("#iconMed").setAttribute("src", "../assets/img/trash3.svg");
+      document.querySelector("#iconHard").setAttribute("src", "../assets/img/trashgrey.svg");
     }
     if(x == 2) {
-      document.querySelector("#iconEasy").src = "../assets/img/trashgrey.svg";
-      document.querySelector("#iconMed").src = "../assets/img/trashgrey.svg";
-      document.querySelector("#iconHard").src = "../assets/img/trash3.svg";
+      document.querySelector("#iconEasy").setAttribute("src", "../assets/img/trashgrey.svg");
+      document.querySelector("#iconMed").setAttribute("src", "../assets/img/trashgrey.svg");
+      document.querySelector("#iconHard").setAttribute("src", "../assets/img/trash3.svg");
     }
   }
 
