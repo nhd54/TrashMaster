@@ -15,13 +15,20 @@ export class PlayComponent implements OnInit {
     
     difficulty = url.replace(/\/+$/, '').split("=").pop();
 
+    let medIcons = document.getElementsByClassName('diffMed');
+    let hardIcons = document.getElementsByClassName('diffHard');
+
     if(difficulty == "easy") {
-      document.querySelector(".diffMed").classList.add("displayNone");
-      document.querySelector(".diffHard").classList.add("displayNone");
+      for(var i = 0; i < medIcons.length; i++) {
+        medIcons[i].classList.add('displayNone');
+        hardIcons[i].classList.add('displayNone');
+      }
       console.log("Game is set to " + difficulty);
     }
     if(difficulty == "medium") {
-      document.querySelector(".diffHard").classList.add("displayNone");
+      for(var i = 0; i < medIcons.length; i++) {
+        hardIcons[i].classList.add('displayNone');
+      }
       console.log("Game is set to " + difficulty);
     }
     if(difficulty == "hard") {
