@@ -24,34 +24,29 @@ import { EndgameComponent } from './component/endgame/endgame.component';
 import { DataService } from './component/data.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MenuComponent,
-    StartComponent,
-    BurgerComponent,
-    PopupComponent,
-    AboutComponent,
-    GamepopupComponent,
-    PlayComponent,
-    LevelComponent,
-    CountdownComponent,
-    GameComponent,
-    LifeComponent,
-    ScoreComponent,
-    NextitemComponent,
-    CurrentitemComponent,
-    TrashComponent,
-    TimeComponent,
-    HighscoreComponent,
-    EndgameComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [DataService],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		MenuComponent,
+		StartComponent,
+		BurgerComponent,
+		PopupComponent,
+		AboutComponent,
+		GamepopupComponent,
+		PlayComponent,
+		LevelComponent,
+		CountdownComponent,
+		GameComponent,
+		LifeComponent,
+		ScoreComponent,
+		NextitemComponent,
+		CurrentitemComponent,
+		TrashComponent,
+		TimeComponent,
+		HighscoreComponent,
+		EndgameComponent
+	],
+	imports: [ BrowserModule, AppRoutingModule ],
+	providers: [ DataService ],
+	bootstrap: [ AppComponent ]
 })
-export class AppModule { }
-
-
+export class AppModule {}

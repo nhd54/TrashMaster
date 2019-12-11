@@ -4,7 +4,7 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable()
 export class DataService {
     
-    private defaultScore = new BehaviorSubject(3);
+    private defaultScore = new BehaviorSubject(0);
     currentScore = this.defaultScore.asObservable();
 
     constructor() { }
