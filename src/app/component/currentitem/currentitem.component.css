@@ -1,3 +1,8 @@
 .currentitem--img {
 	width: 120px;
+	display: none;
+}
+
+.show {
+	display: block !important;
 }

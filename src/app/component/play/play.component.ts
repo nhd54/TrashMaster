@@ -40,29 +40,25 @@ export class PlayComponent extends CurrentitemComponent implements OnInit {
 	}
 
 	allowDrop(ev) {
-		//console.log('test1');
 		ev.preventDefault();
 	}
 
 	drag(ev) {
-		//console.log('test2');
-
 		ev.dataTransfer.setData('text', ev.target.id);
 	}
 
 	drop(ev) {
-		//console.log('test3');
         ev.preventDefault();
         var data = ev.dataTransfer.getData('text');
 
         var currentitem = document.querySelector('.dragable-img').getAttribute('data-id');
-        //console.log(ev.target.getAttribute('data-id'));
 
         if (ev.target.getAttribute('data-id') == currentitem) {
 			this.scoreAdd();
+			this.randomNum();
         } else {
-			console.log('point ikke given');
 			this.removeLife();
+			this.randomNum();
         }
 	}
 
@@ -71,8 +67,6 @@ export class PlayComponent extends CurrentitemComponent implements OnInit {
 
 		let difficulty;
 		let url = window.location.href;
-
-		//console.log(document.querySelector('.trashes--item'));
 
 		difficulty = url.replace(/\/+$/, '').split('=').pop();
 
@@ -95,8 +89,5 @@ export class PlayComponent extends CurrentitemComponent implements OnInit {
 		if (difficulty == 'hard') {
 			console.log('Game is set to ' + difficulty);
 		}
-
-
-		console.log("OMG IT WORKS" + this.testVariable);
 	}
 }
