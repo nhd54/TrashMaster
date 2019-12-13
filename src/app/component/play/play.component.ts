@@ -1,22 +1,40 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
+import { CurrentitemComponent } from '../currentitem/currentitem.component';
 
 @Component({
 	selector: 'app-play',
 	templateUrl: './play.component.html',
 	styleUrls: [ './play.component.css' ]
 })
-export class PlayComponent implements OnInit {
+export class PlayComponent extends CurrentitemComponent implements OnInit {
 	
 	ciscore : number;
+	lives = 3;
 	
-	constructor( private data: DataService ) {}
+	constructor( private data: DataService ) {
+		super();
+	}
 
 	scoreAdd() {
 		this.ciscore++;
 		this.scoreUpdate(this.ciscore);
 	}
-	
+
+	removeLife() {
+		this.lives--;
+		if(this.lives == 2) {
+			document.querySelector("#heart1").classList.add("empty");
+		}
+		if(this.lives == 1) {
+			document.querySelector("#heart2").classList.add("empty");
+		}
+		if(this.lives <= 0) {
+			document.querySelector("#heart3").classList.add("empty");
+			window.location.href = '/endgame/?score=' + this.ciscore;
+		}
+	}
+
 	scoreUpdate(x){
 		this.data.changeScore(x);
 	}
@@ -41,22 +59,20 @@ export class PlayComponent implements OnInit {
         //console.log(ev.target.getAttribute('data-id'));
 
         if (ev.target.getAttribute('data-id') == currentitem) {
-			console.log('point given');
 			this.scoreAdd();
         } else {
-            console.log('point ikke given');
+			console.log('point ikke given');
+			this.removeLife();
         }
 	}
 
 	ngOnInit() {
 		this.data.currentScore.subscribe(score => this.ciscore = score)
 
-
-
 		let difficulty;
 		let url = window.location.href;
 
-		console.log(document.querySelector('.trashes--item'));
+		//console.log(document.querySelector('.trashes--item'));
 
 		difficulty = url.replace(/\/+$/, '').split('=').pop();
 
@@ -79,5 +95,8 @@ export class PlayComponent implements OnInit {
 		if (difficulty == 'hard') {
 			console.log('Game is set to ' + difficulty);
 		}
+
+
+		console.log("OMG IT WORKS" + this.testVariable);
 	}
 }

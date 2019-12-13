@@ -1,5 +1,5 @@
 main {
-	min-height: 100vh;
+	max-height: 100vh;
 }
 
 .gameicons {
@@ -34,7 +34,7 @@ ul {
 }
 
 .current {
-	height: 50vh;
+	height: 18vh;
 	padding: 0 !important;
 	margin: 0 !important;
 }
@@ -131,4 +131,11 @@ body {
 	-webkit-flex-direction: row;
 	flex-wrap: wrap;
 	-webkit-flex-wrap: wrap;
+}
+
+.currentitem {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }

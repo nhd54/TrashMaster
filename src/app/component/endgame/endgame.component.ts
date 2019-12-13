@@ -13,9 +13,12 @@ export class EndgameComponent implements OnInit {
 
   ngOnInit() {
     let url = window.location.href;
+    /* let replaceUrlWith = "endgame"; */
 
     this.score = url.replace(/\/+$/, '').split('=').pop();
 
+    /* var stateObj = { foo: "bar" };
+    history.pushState(stateObj, "some useless title", replaceUrlWith); */
 
   }
 

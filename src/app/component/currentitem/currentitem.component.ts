@@ -8,22 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CurrentitemComponent implements OnInit {
 
-  /* ciscore : number; */
+  constructor() { }
 
-  constructor(/*  private data: DataService  */) { }
+  
 
-  /* scoreAdd() {
-    this.ciscore++;
-    this.scoreUpdate(this.ciscore);
-  }
+  testVariable = true;
 
-  scoreUpdate(x){
-    this.data.changeScore(x);
-  } */
-
-  ngOnInit() {
-    /* this.data.currentScore.subscribe(score => this.ciscore = score) */
-  }
+  ngOnInit() { }
 
 }
  
