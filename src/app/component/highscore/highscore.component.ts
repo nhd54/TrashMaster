@@ -1,10 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from 'angularfire2/firestore';
 
-interface User {
-  name: string;
-  score: number;
-}
+
+import { User } from '../user';
 
 @Component({
   selector: 'app-highscore',
@@ -18,7 +16,6 @@ export class HighscoreComponent implements OnInit {
 
   usersCol: AngularFirestoreCollection<User>;
   users: any;
-
 
   constructor(private afs: AngularFirestore) { }
 
