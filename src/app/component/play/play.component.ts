@@ -11,6 +11,32 @@ export class PlayComponent extends CurrentitemComponent implements OnInit {
 	
 	ciscore : number;
 	lives = 3;
+
+	currentImg;
+	randNum;
+
+
+	randomNum() {
+		this.randNum = Math.floor((Math.random() * 3) + 1);
+	
+		if(this.randNum == 1) {
+		  document.querySelector("#currentImg1").classList.add("show");
+		  document.querySelector("#currentImg2").classList.remove("show");
+		  document.querySelector("#currentImg3").classList.remove("show");
+		}
+		if(this.randNum == 2) {
+		  document.querySelector("#currentImg2").classList.add("show");
+		  document.querySelector("#currentImg1").classList.remove("show");
+		  document.querySelector("#currentImg3").classList.remove("show");
+		}
+		if(this.randNum == 3) {
+		  document.querySelector("#currentImg3").classList.add("show");
+		  document.querySelector("#currentImg2").classList.remove("show");
+		  document.querySelector("#currentImg1").classList.remove("show");
+		}
+		/* console.log("the randNum is " + this.randNum); */
+	  }
+
 	
 	constructor( private data: DataService ) {
 		super();
@@ -56,14 +82,21 @@ export class PlayComponent extends CurrentitemComponent implements OnInit {
         if (ev.target.getAttribute('data-id') == currentitem) {
 			this.scoreAdd();
 			this.randomNum();
+			this.changeCurrentItemDataId();
         } else {
 			this.removeLife();
 			this.randomNum();
+			this.changeCurrentItemDataId();
         }
 	}
 
+	changeCurrentItemDataId() {
+		document.querySelector('app-currentitem').setAttribute('data-id', this.randNum);
+		/* console.log("new data-id is = " + document.querySelector('app-currentitem').getAttribute('data-id')); */
+	}
+
 	ngOnInit() {
-		this.data.currentScore.subscribe(score => this.ciscore = score)
+		this.data.currentScore.subscribe(score => this.ciscore = score);
 
 		let difficulty;
 		let url = window.location.href;
@@ -89,5 +122,8 @@ export class PlayComponent extends CurrentitemComponent implements OnInit {
 		if (difficulty == 'hard') {
 			console.log('Game is set to ' + difficulty);
 		}
+
+		this.randomNum();
+		this.changeCurrentItemDataId();
 	}
 }
