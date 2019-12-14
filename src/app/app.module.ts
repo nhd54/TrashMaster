@@ -23,6 +23,19 @@ import { HighscoreComponent } from './component/highscore/highscore.component';
 import { EndgameComponent } from './component/endgame/endgame.component';
 import { DataService } from './component/data.service';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+
+var firebaseConfig = {
+    apiKey: "AIzaSyCyp7QXfV8z1FO_mWiBRc9gpSsmppcHUpM",
+    authDomain: "trashmasterexam.firebaseapp.com",
+    databaseURL: "https://trashmasterexam.firebaseio.com",
+    projectId: "trashmasterexam",
+    storageBucket: "trashmasterexam.appspot.com",
+    messagingSenderId: "1043986869543",
+    appId: "1:1043986869543:web:89892f510ecfbb7d744d02"
+  };
+
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -45,7 +58,10 @@ import { DataService } from './component/data.service';
 		HighscoreComponent,
 		EndgameComponent
 	],
-	imports: [ BrowserModule, AppRoutingModule ],
+	imports: [ 	BrowserModule, 
+				AppRoutingModule,
+				AngularFireModule.initializeApp(firebaseConfig),
+				AngularFirestoreModule ],
 	providers: [ DataService ],
 	bootstrap: [ AppComponent ]
 })
