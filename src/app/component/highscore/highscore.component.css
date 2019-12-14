@@ -8,7 +8,7 @@ h1 {
     padding: 0px 10px 40px 10px;
     text-align: center;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 50px;
     line-height: 40px;
 }
 
@@ -51,4 +51,37 @@ h1 {
 
 .btn-primary {
     margin: 10px;
+}
+
+@media (min-width: 768px) {
+
+	.btn-primary {
+		margin: 10px;
+		width: 350px;
+        height: 70px;
+        font-size: 25px;
+	}
+
+	h1 {
+		padding: 0px 50px 40px 50px;
+		font-size: 50px;
+		line-height: 50px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 992px) {
+
+	.btn-primary {
+		width: 400px;
+		height: 80px;
+		font-size: 35px;
+    }
+    
+    p {
+        font-size: 35px;
+    }
 }

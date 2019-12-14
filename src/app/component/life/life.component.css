@@ -21,3 +21,17 @@
 .empty {
     color: #8d8d8d !important;
 }
+
+@media (min-width: 768px) {
+.iconheart {
+    font-size: 70px;
+}
+
+}
+
+@media (min-width: 992px) {
+    .iconheart {
+        font-size: 70px;
+    }
+
+}

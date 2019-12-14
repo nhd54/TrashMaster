@@ -4,22 +4,43 @@
     <div class="container">
       <div class="row">
         <div class="col-4">
-          <img src="../assets/img/trash3.svg" class="gameDiffIcon" id="iconEasy" (click)="changeDifficulty(0); changeColor(0)" height="80px" width="80px" />
+          <img
+            src="../assets/img/trash3.svg"
+            class="gameDiffIcon"
+            id="iconEasy"
+            (click)="changeDifficulty(0); changeColor(0)"
+            height="100px"
+            width="100px"
+          />
           <p>Easy</p>
         </div>
         <div class="col-4">
-          <img src="../assets/img/trashgrey.svg" class="gameDiffIcon" id="iconMed" (click)="changeDifficulty(1); changeColor(1)" height="80px" width="80px" />
+          <img
+            src="../assets/img/trashgrey.svg"
+            class="gameDiffIcon"
+            id="iconMed"
+            (click)="changeDifficulty(1); changeColor(1)"
+            height="100px"
+            width="100px"
+          />
           <p>Medium</p>
         </div>
         <div class="col-4">
-          <img src="../assets/img/trashgrey.svg" class="gameDiffIcon"  id="iconHard" (click)="changeDifficulty(2); changeColor(2)" height="80px" width="80px" />
+          <img
+            src="../assets/img/trashgrey.svg"
+            class="gameDiffIcon"
+            id="iconHard"
+            (click)="changeDifficulty(2); changeColor(2)"
+            height="100px"
+            width="100px"
+          />
           <p>Hard</p>
         </div>
       </div>
     </div>
   </div>
   <div class="buttons">
-    <a href="play/?difficulty={{gameDifficulty}}">
+    <a href="play/?difficulty={{ gameDifficulty }}">
       <button type="button" class="btn btn-primary">Start game</button>
     </a>
   </div>

@@ -21,6 +21,7 @@ main {
 .item-text {
 	text-align: center;
 	color: white;
+	font-size: 18px;
 }
 
 .logo img {

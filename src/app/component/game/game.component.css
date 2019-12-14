@@ -40,7 +40,7 @@ h1 {
 
 .text {
 	text-align: center;
-	padding: 20px 50px 10px 50px;
+	padding: 40px 50px 10px 50px;
 	font-size: 18px;
 	color: #ffffff;
 	line-height: 25px;
@@ -110,3 +110,46 @@ h1 {
 .hide {
 	display: none !important;
 }
+
+
+@media (min-width: 768px) {
+
+	.btn-primary {
+		margin: 10px;
+		width: 350px;
+        height: 70px;
+        font-size: 25px;
+	}
+
+	h1 {
+		padding: 100px 50px 0px 50px;
+		font-size: 50px;
+		line-height: 50px;
+	}
+
+	  .text, .fontcolorspeciel {
+        font-size: 25px;
+        padding-right: 150px;
+        padding-left: 150px;
+	}
+	
+	.icon {
+		text-align: center;
+	}
+
+}
+
+@media (min-width: 992px) {
+
+    .text, .fontcolorspeciel {
+		font-size: 35px;
+		line-height: 40px;
+    }
+
+    input, .btn-primary {
+        width: 400px;
+        height: 80px;
+        font-size: 35px;
+    }
+	
+	}

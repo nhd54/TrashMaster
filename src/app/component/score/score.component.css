@@ -11,3 +11,8 @@
     left: calc(50% - 0.6em);
     top: calc(50% - 0.4em);
 }
+
+#scoreText {
+    text-align: center;
+    padding-left: 10px;
+}
