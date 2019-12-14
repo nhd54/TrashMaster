@@ -64,3 +64,7 @@ h1 {
     height: 50px;
     margin-bottom: 15px;
 }
+
+.gameDiffIcon {
+    cursor: pointer;
+}

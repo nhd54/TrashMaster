@@ -1,9 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,800&display=swap');
- */
-
 .body {
-    height: 100vh;
     width: 100%;
 }
 
@@ -13,16 +8,6 @@
     margin-top: 50px; 
 }
 
-.headline{
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: bolder;
-}
-
-<<<<<<< HEAD
-x
-
-=======
->>>>>>> ab116fe69b029a76a9738e3731ed23d5dba1d667
 .text{
     padding-left: 30px;
     padding-right: 30px;
@@ -30,5 +15,16 @@ x
     font-weight: lighter
 }
 
+.iptBtn-container {
+    display: flex;
+    flex-direction: column;
+}
 
-
+input {
+    width: 30%; height: 40px;
+    font-size: 1.2em;
+    padding-left: 10px;
+    margin: 20px auto;
+    border-radius: 15px;
+    border: none;
+}

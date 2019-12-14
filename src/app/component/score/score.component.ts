@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-score',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScoreComponent implements OnInit {
 
-  constructor() { }
+  score : number; 
+
+  constructor( private data: DataService ) { }
 
   ngOnInit() {
+    this.data.currentScore.subscribe(score => this.score = score)
   }
 
 }

@@ -29,27 +29,33 @@
     <!--current item-->
     <ul class="current row justify-content-center align-content-center col-12">
       <li class="currentitem">
-        <app-currentitem class="row justify-content-center"></app-currentitem>
+        <app-currentitem
+        class="row justify-content-center testers"
+        id="div1" 
+        (drop)="drop($event)" 
+        (dragover)="allowDrop($event)"
+        draggable="true" 
+        (dragstart)="drag($event)" 
+        id="drag1"
+        width="88" 
+        height="31"
+        class="dragable-img"
+        data-id="1"
+        ></app-currentitem>
       </li>
-    </ul>
+    </ul> 
+
+      
+ 
 
     <!--Trashes-->
-    <app-trash class="trash col-12 row"></app-trash>
+    <app-trash class="trash col-12 row"
+    id="div2"
+    style="position: absolute; bottom: 0; left: 0; width: 100%"
+      (drop)="drop($event)" 
+      (dragover)="allowDrop($event)">
+    </app-trash>
   </section>
 </main>
 
-<!-- <div class="popup container-fluid">
 
-    <section class="row buttons justify-content-center align-content-center">
-        <h2 class="gameover col-12">Game Over</h2>
-           <a href="level">
-             <button type="button" class="btn btn-primary">How to play</button>
-            </a>
-            <a href="level">
-              <button type="button" class="btn btn-primary">Skip to game</button>
-           </a>
-    </section>
-        
-</div>
-
--->

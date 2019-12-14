@@ -1,20 +1,24 @@
 <body>
   <h1>HOW TO PLAY THE GAME</h1>
-  you need to be fast! You have 3 minutes to sort the trash as fast as you can,
-  before you run out of time.
+ <p>
+  you need to be fast! You have 3 minutes to sort the
+  trash as fast as you can, before you run out of time.
+ </p> 
+  
 
   <br />
 
   <div class="icon">
-    <img src="../assets/img/apple.svg" height="100px" width="100px" />
+    <img src="../assets/img/apple.svg" height="100px" width="100px">
   </div>
+
 
   <p class="text">
     As shown above, you need to drag the element into to correct trash can.
   </p>
 
   <div class="icon">
-    <img src="../assets/img/apple.svg" height="100px" width="100px" />
+    <img src="../assets/img/time.svg" height="100px" width="100px" />
     <p class="timeout">03:00</p>
     <p class="text">
       You need to sort out the trash as fast as you can, before you run out of
@@ -50,10 +54,8 @@
   <div class="icontrash">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-4">
           <i class="fa fa-trash" style="color: #F6A117;"></i>
-
-          <i class="fa fa-trash-o"></i>
         </div>
         <div class="col-4">
           <i class="fa fa-trash"></i>
@@ -61,6 +63,7 @@
         <div class="col-4">
           <i class="fa fa-trash"></i>
         </div>
+    
       </div>
     </div>
   </div>
@@ -74,14 +77,16 @@
     Think you got the catch of it? Well then, lets begin!
   </p>
   <div class="buttons">
-    <button type="button" class="btn btn-primary">Start game</button>
+    <a href="level">
+     <button type="button" class="btn btn-primary">Start game</button>
+    </a>
   </div>
 </body>
 <div class="popup container-fluid">
   <section class="row buttons justify-content-center align-content-center">
-    <a href="game">
-      <button type="button" class="btn btn-primary">How to play</button>
-    </a>
+
+      <button type="button"  (click)="removePopup()" class="btn btn-primary">How to play</button>
+    
     <a href="level">
       <button type="button" class="btn btn-primary">Skip to game</button>
     </a>

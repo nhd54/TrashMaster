@@ -1,26 +1,27 @@
 <div class="level-container">
-  <h1>Choose level difficulity</h1>
+  <h1>Choose level difficulty</h1>
   <div class="icons">
     <div class="container">
       <div class="row">
         <div class="col-4">
-          <img src="../assets/img/trashgrey.svg" height="80px" width="80px" />
+          <img src="../assets/img/trash3.svg" class="gameDiffIcon" id="iconEasy" (click)="changeDifficulty(0); changeColor(0)" height="80px" width="80px" />
           <p>Easy</p>
         </div>
         <div class="col-4">
-          <img src="../assets/img/trashgrey.svg" height="80px" width="80px" />
+          <img src="../assets/img/trashgrey.svg" class="gameDiffIcon" id="iconMed" (click)="changeDifficulty(1); changeColor(1)" height="80px" width="80px" />
           <p>Medium</p>
         </div>
         <div class="col-4">
-          <img src="../assets/img/trashgrey.svg" height="80px" width="80px" />
+          <img src="../assets/img/trashgrey.svg" class="gameDiffIcon"  id="iconHard" (click)="changeDifficulty(2); changeColor(2)" height="80px" width="80px" />
           <p>Hard</p>
         </div>
       </div>
     </div>
   </div>
   <div class="buttons">
-    <a href="play">
-      <button type="button" class="btn btn-primary">Start game</button></a
-    >
+    <a href="play/?difficulty={{gameDifficulty}}">
+      <button type="button" class="btn btn-primary">Start game</button>
+    </a>
   </div>
+  <!-- <button (click)="debug()">TEST</button> -->
 </div>
