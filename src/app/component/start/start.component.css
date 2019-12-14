@@ -8,23 +8,83 @@
     margin-top: 50px; 
 }
 
+.headline {
+    font-size: 20px;
+}
+
 .text{
     padding-left: 30px;
     padding-right: 30px;
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: lighter
+    font-weight: lighter;
+    
 }
 
 .iptBtn-container {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 input {
-    width: 30%; height: 40px;
+    width: 200px;
+    height: 50px;
     font-size: 1.2em;
     padding-left: 10px;
-    margin: 20px auto;
-    border-radius: 15px;
+    margin: 0 auto;
+    border-radius: 20px;
     border: none;
+    text-align: center;
 }
+
+/* tablet version */
+
+@media (min-width: 768px) {
+
+    .content {
+        margin-top: 100px;
+    }
+
+    .headline {
+        font-size: 40px;
+    }
+
+    .text {
+        font-size: 25px;
+        padding-right: 70px;
+        padding-left: 70px;
+        margin-bottom: 50px;
+    }
+
+    input, .btn-primary {
+        width: 350px;
+        height: 70px;
+        font-size: 25px;   
+    }
+ }
+
+ @media (min-width: 992px) {
+
+    .content {
+        margin-top: 250px;
+    }
+    .headline {
+        font-size: 50px;
+    }
+    .text {
+        font-size: 35px;
+    }
+
+    input, .btn-primary {
+        width: 400px;
+        height: 80px;
+        font-size: 35px;
+    }
+
+  }
+
+  @media (min-width: 1200px) { 
+      .content {
+          margin-top: 20px;
+      }
+  }

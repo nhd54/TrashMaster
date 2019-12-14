@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,400,800&display=swap');
 
 body {
-	height: 390vh;
 	width: 100%;
 	background-color: #1f1436;
 	font-family: 'Nunito Sans', sans-serif;
@@ -16,10 +15,7 @@ h1 {
 	line-height: 40px;
 }
 
-<<<<<<< HEAD
  
-=======
->>>>>>> e12d38caee6c27222db097e768d73dbf5b0fb436
 .timeout {
 	color: #ef492e;
 	font-size: 50px;
@@ -32,7 +28,7 @@ h1 {
 	color: #707070;
 	font-size: 90px;
 	text-align: center;
-	padding: 40px 30px 10px 30px;
+	padding: 10px 30px 10px 30px;
 }
 
 .iconheart {
@@ -44,7 +40,7 @@ h1 {
 
 .text {
 	text-align: center;
-	padding: 50px 50px 10px 50px;
+	padding: 20px 50px 10px 50px;
 	font-size: 18px;
 	color: #ffffff;
 	line-height: 25px;
@@ -65,7 +61,7 @@ h1 {
 	border-radius: 20px;
 	width: 200px;
 	height: 50px;
-	margin-bottom: 15px;
+    margin: 10px auto;
 }
 
 .icon {

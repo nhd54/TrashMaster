@@ -1,17 +1,30 @@
 <body>
   <h1>HOW TO PLAY THE GAME</h1>
- <p>
-  you need to be fast! You have 3 minutes to sort the
-  trash as fast as you can, before you run out of time.
- </p> 
-  
+  <p class="text">
+    you need to be fast! You have 3 minutes to sort the trash as fast as you
+    can, before you run out of time.
+  </p>
 
   <br />
 
   <div class="icon">
-    <img src="../assets/img/apple.svg" height="100px" width="100px">
+    <img src="../assets/img/apple.svg" height="100px" width="100px" />
   </div>
-
+  <div class="icontrash">
+    <div class="container">
+      <div class="row">
+        <div class="icon">
+          <img src="../assets/img/trashgrey.svg" height="100px" width="100px" />
+        </div>
+        <div class="icon">
+          <img src="../assets/img/trashgrey.svg" height="100px" width="100px" />
+        </div>
+        <div class="icon">
+          <img src="../assets/img/trashgrey.svg" height="100px" width="100px" />
+        </div>
+      </div>
+    </div>
+  </div>
 
   <p class="text">
     As shown above, you need to drag the element into to correct trash can.
@@ -42,7 +55,7 @@
           <i class="fa fa-heart"></i>
         </div>
         <div class="col-4">
-          <i class="fa fa-heart" style="color: #ffffff;"></i>
+          <i class="fa fa-heart" style="color: #707070;"></i>
         </div>
       </div>
     </div>
@@ -51,42 +64,30 @@
     If you throw the trash out in the wrong trash can, you will lose a life. So
     be careful, you only have 3 chances!
   </p>
-  <div class="icontrash">
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <i class="fa fa-trash" style="color: #F6A117;"></i>
-        </div>
-        <div class="col-4">
-          <i class="fa fa-trash"></i>
-        </div>
-        <div class="col-4">
-          <i class="fa fa-trash"></i>
-        </div>
-    
-      </div>
-    </div>
-  </div>
 
-  <p class="text">
-    Finally, this golden trash can will show the current score, throughout the
-    game. For each element you get right, you get 1 point.
-  </p>
+  <div class="icon">
+    <img src="../assets/img/trash3.svg" height="100px" width="100px" />
+    <p class="text">
+      Finally, this golden trash can will show the current score, throughout the
+      game. For each element you get right, you get 1 point.
+    </p>
+  </div>
 
   <p class="fontcolorspeciel">
     Think you got the catch of it? Well then, lets begin!
   </p>
   <div class="buttons">
     <a href="level">
-     <button type="button" class="btn btn-primary">Start game</button>
+      <button type="button" class="btn btn-primary">Start game</button>
     </a>
   </div>
 </body>
 <div class="popup container-fluid">
   <section class="row buttons justify-content-center align-content-center">
+    <button type="button" (click)="removePopup()" class="btn btn-primary">
+      How to play
+    </button>
 
-      <button type="button"  (click)="removePopup()" class="btn btn-primary">How to play</button>
-    
     <a href="level">
       <button type="button" class="btn btn-primary">Skip to game</button>
     </a>
