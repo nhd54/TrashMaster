@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LevelComponent } from '../level/level.component';
 
 @Component({
   selector: 'app-play',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayComponent implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

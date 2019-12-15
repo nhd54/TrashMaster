@@ -3,6 +3,19 @@
     padding-top: 50px;
 }
 
+h1 {
+    color: #F6A117;
+    padding: 0px 10px 40px 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.iconaward {
+    padding-bottom: 40px;
+}
+
 .inner-container {
     width: 90%;
     margin: 0 5%;
@@ -11,20 +24,19 @@
     align-items: center;
 }
 
-.award {
-    margin: 80px 0;
-    width: 200px;
-}
 
 .col-sm-12 {
     background-color: #402A4F;
-    padding: 20px 20px;
+    padding: 15px 15px;
+    font-size: 20px;
     font-weight: bold;
     margin: 10px 0;
-    border-radius: 30px;
+    border-radius: 20px;
     text-transform: capitalize;
     display: flex;
     justify-content: space-between;
+    font-family: 'Nunito Sans', sans-serif;
+
 }
 
 .col-sm-12 p {
@@ -34,5 +46,9 @@
 .btn-container {
     display: flex;
     flex-direction: column;
-    margin: 50px 0 100px;
+    margin: 20px 0 40px;
+}
+
+.btn-primary {
+    margin: 10px;
 }

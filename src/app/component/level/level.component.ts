@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LevelService } from './level.service';
 
 @Component({
   selector: 'app-level',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LevelComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  test;
+  constructor(levelservice: LevelService ) {
+    this.test = levelservice.gameinit();
+   }
+  
+  ngOnInit() { }
 
 }
+ 
