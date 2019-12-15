@@ -1,5 +1,5 @@
 main {
-	min-height: 100vh;
+	max-height: 100vh;
 }
 
 .gameicons {
@@ -9,6 +9,8 @@ main {
 .border-bot {
 	border-bottom: 4px solid #f6a117;
 	margin: 0 !important;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
 .item-img {
@@ -21,6 +23,7 @@ main {
 .item-text {
 	text-align: center;
 	color: white;
+	font-size: 18px;
 }
 
 .logo img {
@@ -34,7 +37,7 @@ ul {
 }
 
 .current {
-	height: 50vh;
+	height: 18vh;
 	padding: 0 !important;
 	margin: 0 !important;
 }
@@ -42,4 +45,100 @@ ul {
 .trash {
 	padding: 0 !important;
 	margin: 0 !important;
+}
+
+.buttons {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.btn-primary {
+	background-color: #ef492e;
+	font-size: 20px;
+	font-weight: bold;
+	border: none;
+	text-align: center;
+	border-radius: 20px;
+	width: 200px;
+	height: 50px;
+	margin-bottom: 15px;
+}
+
+.popup {
+	position: fixed !important;
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	background-color: rgba(31, 20, 54, 0.8);
+}
+
+.popup .buttons {
+	height: 100vh;
+}
+
+.gameover {
+	color: red;
+	font-size: 50px;
+	font-weight: 800;
+}
+
+body {
+	font-family: 'Cabin', sans-serif;
+}
+
+.box {
+	height: 200px;
+	margin: 40px;
+	width: 200px;
+}
+
+.box#box1 {
+	background-color: #cff5f7;
+}
+.box#box2 {
+	background-color: #f5edb2;
+}
+.box#box3 {
+	background-color: #cfeec4;
+}
+.box#box4 {
+	background-color: #f9c7c9;
+}
+
+.container {
+	justify-content: center;
+	margin-top: 2.5%;
+}
+
+#container2 {
+	margin-top: 0;
+}
+
+.contents {
+	height: 200px;
+	width: 200px;
+}
+
+.contents span {
+	font-size: 30px;
+	line-height: 200px;
+	margin-left: 20%;
+	vertical-align: middle;
+}
+
+.flex_row {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+.currentitem {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }

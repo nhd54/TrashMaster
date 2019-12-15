@@ -1,8 +1,17 @@
+
 .trash--img {
-	width: 80%;
+	max-width: 90px;
+	margin-top: 20px;
 }
 
 .trashes {
 	padding: 0 0 10px 0 !important;
-	margin: 0 !important;
+	margin: 0 auto !important;
+	width: 90%;
+	flex-wrap: wrap;
 }
+
+.displayNone {
+	display: none !important;
+}
+

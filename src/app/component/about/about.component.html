@@ -9,32 +9,45 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <img
-            src="../assets/img/goal12sustainable.svg"
-            height="100px"
-            width="100px"
-          />
-          <p class="smalltext">
-            Ensure sustainable consumption and production patterns
-          </p>
+          <div class="image1">
+            <img src="../assets/img/goal12sustainable.svg" />
+            <p class="smalltext">
+              Ensure sustainable consumption and production patterns
+            </p>
+          </div>
         </div>
         <div class="col-6">
-          <img
-            src="../assets/img/goal13sustainable.svg"
-            height="100px"
-            width="100px"
-          />
-          <p class="smalltext">
-            Take urgent action to combat climate change and its impacts
-          </p>
+          <div class="image2">
+            <img src="../assets/img/goal13sustainable.svg" />
+            <p class="smalltext">
+              Take urgent action to combat climate change and its impacts
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <div class="buttons">
-    <a href="play">
-      <button type="button" class="btn btn-primary">Start game</button></a
-    >
+    <a href="game">
+      <button type="button" class="btn btn-primary">Start game</button>
+    </a>
   </div>
 </body>
+
+<div class="popup container-fluid">
+  <section class="row buttons justify-content-center align-content-center">
+    <p class="explain col-12">
+      We encourage you to read more about the sustainable development goals
+      before continuing to the game
+    </p>
+
+    <button type="button" (click)="removePopup()" class="btn btn-primary">
+      Read more
+    </button>
+
+    <a href="level">
+      <button type="button" class="btn btn-primary">Skip to game</button>
+    </a>
+  </section>
+</div>

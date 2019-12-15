@@ -8,6 +8,7 @@ import {LevelService} from './component/level/level.service';
   providers: [LevelService]
 
 })
+
 export class AppComponent {
   title = 'TrashMaster';
 }

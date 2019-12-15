@@ -1,26 +1,31 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from 'angularfire2/firestore';
+
+
+import { User } from '../user';
 
 @Component({
   selector: 'app-highscore',
   templateUrl: './highscore.component.html',
   styleUrls: ['./highscore.component.css']
 })
+
 export class HighscoreComponent implements OnInit {
-  one = 'player1';
-  two = 'player2';
-  three = 'player3';
-  four = 'player4';
-  five = 'player5';
-  six = 'player6';
-  seven = 'player7';
-  eight = 'player8';
-  nine = 'player9';
-  ten = 'player10';
 
+  username;
 
-  constructor() { }
+  usersCol: AngularFirestoreCollection<User>;
+  users: any;
+
+  constructor(private afs: AngularFirestore) { }
 
   ngOnInit() {
+    this.username = localStorage.getItem('username');
+    this.username = JSON.parse(this.username);
+    console.log(this.username);
+
+    this.usersCol = this.afs.collection('users');
+    this.users = this.usersCol.valueChanges();
   }
 
 }

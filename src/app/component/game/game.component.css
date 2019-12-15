@@ -1,97 +1,155 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,400,800&display=swap');
 
 body {
-    height: 390vh; width: 100%;
-    background-color: #1F1436;
-    font-family: 'Nunito Sans', sans-serif;
+	width: 100%;
+	background-color: #1f1436;
+	font-family: 'Nunito Sans', sans-serif;
 }
 
 h1 {
-    color: #F6A117;
-    padding: 80px 10px 10px 10px;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 40px;
-    line-height: 40px;
+	color: #f6a117;
+	padding: 80px 10px 10px 10px;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 40px;
+	line-height: 40px;
 }
+
  
 .timeout {
-    color: #EF492E;
-    font-size: 50px;
-    text-align: center;
-    font-weight: bolder;
-    padding-top: 10px;
+	color: #ef492e;
+	font-size: 50px;
+	text-align: center;
+	font-weight: bolder;
+	padding-top: 10px;
 }
 
 .icontrash {
-    color: #707070;
-    font-size: 90px;
-    text-align: center;
-    padding: 40px 30px 10px 30px;
+	color: #707070;
+	font-size: 90px;
+	text-align: center;
+	padding: 10px 30px 10px 30px;
 }
 
 .iconheart {
-    color: #EF492E;
-    font-size: 75px;
-    text-align: center;
-    padding: 40px 30px 10px 30px;
+	color: #ef492e;
+	font-size: 75px;
+	text-align: center;
+	padding: 40px 30px 10px 30px;
 }
 
 .text {
-    text-align: center;
-    padding: 50px 50px 10px 50px;
-    font-size: 18px;
-    color: #ffffff;
-    line-height: 25px;
-    font-weight: lighter;
+	text-align: center;
+	padding: 40px 50px 10px 50px;
+	font-size: 18px;
+	color: #ffffff;
+	line-height: 25px;
+	font-weight: lighter;
 }
 
 .buttons {
-    text-align: center;
-    padding-top: 30px;
+	text-align: center;
+	padding-top: 30px;
 }
 
 .btn-primary {
-    background-color:#EF492E;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-    text-align: center;
-    border-radius: 20px;
-    width: 200px;
-    height: 50px;
-    margin-bottom: 15px;
+	background-color: #ef492e;
+	font-size: 20px;
+	font-weight: bold;
+	border: none;
+	text-align: center;
+	border-radius: 20px;
+	width: 200px;
+	height: 50px;
+    margin: 10px auto;
 }
 
 .icon {
-    text-align: center;
-    padding-top: 40px;
+	text-align: center;
+	padding-top: 40px;
 }
 
 .fontcolorspeciel {
-    text-align: center;
-    padding: 20px 50px 10px 50px;
-    font-size: 18px;
-    color: #F6A117;
-    line-height: 25px;
-    font-weight: bolder;
+	text-align: center;
+	padding: 20px 50px 10px 50px;
+	font-size: 18px;
+	color: #f6a117;
+	line-height: 25px;
+	font-weight: bolder;
 }
 
 .buttons {
-    text-align: center;
-    padding-top: 30px;
+	text-align: center;
+	padding-top: 30px;
 }
 
 .btn-primary {
-    background-color:#EF492E;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-    text-align: center;
-    border-radius: 20px;
-    width: 200px;
-    height: 50px;
-    margin-bottom: 15px;
+	background-color: #ef492e;
+	font-size: 20px;
+	font-weight: bold;
+	border: none;
+	text-align: center;
+	border-radius: 20px;
+	width: 200px;
+	height: 50px;
+	margin-bottom: 15px;
+}
+
+.popup {
+	position: fixed !important;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	background-color: rgba(31, 20, 54, 0.8);
+}
+
+.popup .buttons {
+	height: 100vh;
+}
+
+.hide {
+	display: none !important;
 }
 
 
+@media (min-width: 768px) {
+
+	.btn-primary {
+		margin: 10px;
+		width: 350px;
+        height: 70px;
+        font-size: 25px;
+	}
+
+	h1 {
+		padding: 100px 50px 0px 50px;
+		font-size: 70px;
+		line-height: 80px;
+	}
+
+	  .text, .fontcolorspeciel {
+        font-size: 25px;
+        padding-right: 150px;
+        padding-left: 150px;
+	}
+	
+	.icon {
+		text-align: center;
+	}
+
+}
+
+@media (min-width: 992px) {
+
+    .text, .fontcolorspeciel {
+		font-size: 35px;
+		line-height: 40px;
+    }
+
+    input, .btn-primary {
+        width: 400px;
+        height: 80px;
+        font-size: 35px;
+    }
+	
+	}

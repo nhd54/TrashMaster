@@ -16,7 +16,7 @@
       <div class="row">
         <div class="col-12">
           <div class="image">
-            <img src="assets/img/logo.png" height="170px" width="250px" />
+            <img src="assets/img/logo.png" />
           </div>
         </div>
         <div class="col-12">
@@ -27,9 +27,21 @@
           </p>
         </div>
 
-        <div class="col-12">
+        <div class="col-12 iptBtn-container">
+          <input
+            type="text"
+            id="usernameInput"
+            value=""
+            placeholder="Your name"
+          />
           <a href="about">
-            <button type="button" class="btn btn-primary">Start</button></a
+            <button
+              type="button"
+              (click)="saveUsername()"
+              class="btn btn-primary"
+            >
+              Start
+            </button></a
           >
         </div>
       </div>

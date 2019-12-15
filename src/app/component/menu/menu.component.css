@@ -2,7 +2,6 @@
 
 .body{
     background-color: #1f1436;
-    height: 100vh;
     width: 100%;
 }
 
@@ -30,4 +29,26 @@
     margin: 20px;
     font-size: 20px;
     font-weight: bold;
+}
+
+@media (min-width: 768px) {
+
+	.btn-primary {
+		margin: 10px;
+		width: 350px;
+        height: 70px;
+        font-size: 25px;
+    }
+    
+}
+
+
+@media (min-width: 992px) {
+
+    .btn-primary {
+        width: 400px;
+        height: 80px;
+        font-size: 35px;
+    }
+
 }

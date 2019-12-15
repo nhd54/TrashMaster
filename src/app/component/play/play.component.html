@@ -21,7 +21,7 @@
     <div class="nextitem row justify-content-end col-12">
       <span class="item">
         <div class="item-img">
-            <app-nextitem class="row justify-content-center"></app-nextitem>
+          <app-nextitem class="row justify-content-center"></app-nextitem>
         </div>
         <p class="item-text">Next item</p>
       </span>
@@ -29,12 +29,33 @@
     <!--current item-->
     <ul class="current row justify-content-center align-content-center col-12">
       <li class="currentitem">
-          <app-currentitem class="row justify-content-center"></app-currentitem>
-        </li>
-    </ul>
+        <app-currentitem
+        class="row justify-content-center testers"
+        id="div1" 
+        (drop)="drop($event)" 
+        (dragover)="allowDrop($event)"
+        draggable="true" 
+        (dragstart)="drag($event)" 
+        id="drag1"
+        width="88" 
+        height="31"
+        class="dragable-img"
+        data-id="1"
+        ></app-currentitem>
+      </li>
+    </ul> 
+
+      
+ 
 
     <!--Trashes-->
-    <app-trash class="trash col-12 row"></app-trash>
-   
+    <app-trash class="trash col-12 row"
+    id="div2"
+    style="position: absolute; bottom: 0; left: 0; width: 100%"
+      (drop)="drop($event)" 
+      (dragover)="allowDrop($event)">
+    </app-trash>
   </section>
 </main>
+
+
