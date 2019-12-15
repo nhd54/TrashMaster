@@ -63,10 +63,10 @@ h1 {
 	}
 
 	h1 {
-		padding: 0px 50px 40px 50px;
-		font-size: 50px;
-		line-height: 50px;
-    }
+		padding: 100px 50px 0px 50px;
+		font-size: 70px;
+		line-height: 80px;
+	}
 
     p {
         font-size: 25px;

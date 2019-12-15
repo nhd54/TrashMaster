@@ -9,6 +9,8 @@ main {
 .border-bot {
 	border-bottom: 4px solid #f6a117;
 	margin: 0 !important;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
 .item-img {

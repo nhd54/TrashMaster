@@ -2,12 +2,37 @@
     padding-top: 10px;
 }
 
+
+.icon {
+    height: 80px;
+}
+
+.icon img {
+    width: 80px;
+    height: auto;
+}
+
 #time {
     color: #EF492E;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bolder;
     font-size: 22px;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .icon {
+        height: 120px;
+    }
+    
+    .icon img {
+        width: 120px;
+        height: auto;
+    }
+
+  
+
 }
 
 

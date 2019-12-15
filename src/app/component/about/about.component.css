@@ -6,6 +6,25 @@ body {
 	font-family: 'Nunito Sans', sans-serif;
 }
 
+.image1 {
+	height: 150px;
+}
+
+.image1 img {
+	height: auto;
+	width: 100px;
+}
+
+.image2 {
+	height: 150px;
+}
+
+.image2 img {
+	height: auto;
+	width: 100px;
+}
+
+
 h1 {
 	color: #f6a117;
 	padding: 80px 10px 10px 10px;
@@ -74,16 +93,36 @@ h1 {
 
 @media (min-width: 768px) {
 
+	.image1 {
+		height: 300px;
+	}
+	
+	.image1 img {
+		height: auto;
+		width: 200px;
+	}
+	
+	.image2 {
+		height: 300px;
+	}
+	
+	.image2 img {
+		height: auto;
+		width: 200px;
+	}
+	
+
 	h1 {
 		padding: 100px 50px 0px 50px;
-		font-size: 50px;
-		line-height: 50px;
+		font-size: 70px;
+		line-height: 80px;
 	}
 
 	.smalltext {
-		font-size: 20px;
+		font-size: 25px;
 		padding-right: 50px;
 		padding-left: 50px;
+		line-height: 25px;
 	}
 
 	.text {
@@ -110,6 +149,10 @@ h1 {
 		font-size: 35px;
 	}
 
+	.smalltext {
+		font-size: 30px;
+	}
+
 	.btn-primary {
 		width: 400px;
         height: 80px;
@@ -118,5 +161,7 @@ h1 {
 
 	.text {
 		font-size: 35px;
+		padding-left: 130px;
+		padding-right: 130px;
 	}
 }

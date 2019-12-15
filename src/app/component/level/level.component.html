@@ -1,40 +1,43 @@
 <div class="level-container">
-  <h1>Choose level difficulty</h1>
+  <h1>
+    Choose level<br />
+    difficulty
+  </h1>
   <div class="icons">
     <div class="container">
       <div class="row">
         <div class="col-4">
-          <img
-            src="../assets/img/trash3.svg"
-            class="gameDiffIcon"
-            id="iconEasy"
-            (click)="changeDifficulty(0); changeColor(0)"
-            height="100px"
-            width="100px"
-          />
-          <p>Easy</p>
+          <div class="image">
+            <img
+              src="../assets/img/trash3.svg"
+              class="gameDiffIcon"
+              id="iconEasy"
+              (click)="changeDifficulty(0); changeColor(0)"
+            />
+            <p>Easy</p>
+          </div>
         </div>
         <div class="col-4">
-          <img
-            src="../assets/img/trashgrey.svg"
-            class="gameDiffIcon"
-            id="iconMed"
-            (click)="changeDifficulty(1); changeColor(1)"
-            height="100px"
-            width="100px"
-          />
-          <p>Medium</p>
+          <div class="image">
+            <img
+              src="../assets/img/trashgrey.svg"
+              class="gameDiffIcon"
+              id="iconMed"
+              (click)="changeDifficulty(1); changeColor(1)"
+            />
+            <p>Medium</p>
+          </div>
         </div>
         <div class="col-4">
-          <img
-            src="../assets/img/trashgrey.svg"
-            class="gameDiffIcon"
-            id="iconHard"
-            (click)="changeDifficulty(2); changeColor(2)"
-            height="100px"
-            width="100px"
-          />
-          <p>Hard</p>
+          <div class="image">
+            <img
+              src="../assets/img/trashgrey.svg"
+              class="gameDiffIcon"
+              id="iconHard"
+              (click)="changeDifficulty(2); changeColor(2)"
+            />
+            <p>Hard</p>
+          </div>
         </div>
       </div>
     </div>

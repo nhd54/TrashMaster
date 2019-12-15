@@ -8,6 +8,16 @@
     margin-top: 50px; 
 }
 
+.image {
+    height: 170px;
+}
+
+.image img {
+    width: 250px;
+    height: auto;
+}
+
+
 .headline {
     font-size: 20px;
 }
@@ -41,6 +51,16 @@ input {
 
 @media (min-width: 768px) {
 
+    .image {
+        height: 250px;
+    }
+    
+    .image img {
+        width: 350px;
+        height: auto;
+    }
+    
+
     .content {
         margin-top: 100px;
     }
@@ -64,6 +84,15 @@ input {
  }
 
  @media (min-width: 992px) {
+
+    .image {
+        height: 350px;
+    }
+    
+    .image img {
+        width: 450px;
+        height: auto;
+    }
 
     .content {
         margin-top: 250px;
