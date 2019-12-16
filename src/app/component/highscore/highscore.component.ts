@@ -24,7 +24,7 @@ export class HighscoreComponent implements OnInit {
     this.username = JSON.parse(this.username);
     console.log(this.username);
 
-    this.usersCol = this.afs.collection('users');
+    this.usersCol = this.afs.collection('users', ref => ref.orderBy('score', "desc"));
     this.users = this.usersCol.valueChanges();
   }
 
