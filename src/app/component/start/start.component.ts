@@ -26,6 +26,10 @@ export class StartComponent implements OnInit {
     }
   }
 
+  gotoMenu() {
+    window.location.href = "/menu";
+  }
+
   ngOnInit() {
     let test = localStorage.getItem("username");
     this.username = test;

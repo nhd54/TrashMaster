@@ -56,6 +56,10 @@ input {
     border-color: #6a6a6a;
 }
 
+.burger-menu {
+    cursor: pointer;
+}
+
 /* tablet version */
 
 @media (min-width: 768px) {

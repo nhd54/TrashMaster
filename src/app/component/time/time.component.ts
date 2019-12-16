@@ -7,9 +7,9 @@ import { DataService } from '../data.service';
 	styleUrls: [ './time.component.css' ]
 })
 export class TimeComponent implements OnInit {
-	seconds: number = 0;
+	seconds: number = 30;
 	secondsshwon;
-	minutes: number = 3;
+	minutes: number = 1;
 
 	score : number;
 
