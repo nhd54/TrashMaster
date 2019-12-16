@@ -154,7 +154,15 @@ export class PlayComponent extends CurrentitemComponent implements OnInit {
 		}
 	}
 
-	
+	correct() {
+		document.querySelector('app-currentitem').classList.add('correctAnim');
+		setTimeout(function () {document.querySelector('app-currentitem').classList.remove('correctAnim')}, 600);
+	}
+
+	wrong() {
+		document.querySelector('app-currentitem').classList.add('wrongAnim');
+		setTimeout(function () {document.querySelector('app-currentitem').classList.remove('wrongAnim')}, 600);
+	}
 
 	scoreUpdate(x){
 		this.data.changeScore(x);
@@ -178,10 +186,12 @@ export class PlayComponent extends CurrentitemComponent implements OnInit {
 			this.scoreAdd();
 			this.randomNum();
 			this.changeCurrentItemDataId();
+			this.correct();
         } else {
 			this.removeLife();
 			this.randomNum();
 			this.changeCurrentItemDataId();
+			this.wrong();
         }
 	}
 

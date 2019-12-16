@@ -154,3 +154,21 @@ body {
 .trashHard {
 	bottom: 0;
 }
+
+.correctAnim {
+	animation: correct 500ms;
+}
+
+.wrongAnim {
+	animation: wrong 500ms;
+}
+
+@keyframes correct {
+	0% {box-shadow: 0 0 10px 10px yellow}
+	100% {box-shadow: 0 0 0 0 yellow}
+}
+
+@keyframes wrong {
+	0% {box-shadow: 0 0 10px 10px red}
+	100% {box-shadow: 0 0 0 0 red}
+}
