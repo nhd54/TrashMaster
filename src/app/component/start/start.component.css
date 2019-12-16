@@ -94,23 +94,16 @@ input {
 
  @media (min-width: 992px) {
 
-    .image {
-        height: 350px;
-    }
-    
-    .image img {
-        width: 450px;
-        height: auto;
-    }
+
 
     .content {
         margin-top: 250px;
     }
     .headline {
-        font-size: 50px;
+        font-size: 40px;
     }
     .text {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     input, .btn-primary {
