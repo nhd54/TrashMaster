@@ -11,3 +11,18 @@
 	height: auto;
 	position: relative;
 }
+
+@media (min-width: 768px) {
+
+	.items img {
+		width: 150px;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.items img {
+		width: 180px;
+	}
+
+}
