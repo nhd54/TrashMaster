@@ -33,16 +33,13 @@
             id="usernameInput"
             value=""
             placeholder="Your name"
-          />
-          <a href="about">
-            <button
-              type="button"
-              (click)="saveUsername()"
-              class="btn btn-primary"
-            >
-              Start
-            </button></a
           >
+          <button 
+            type="button" 
+            (click)="saveUsername()" 
+            class="btn btn-primary"
+            disabled
+          >Start</button>
         </div>
       </div>
     </div>

@@ -1,13 +1,13 @@
 
 .trash--img {
-	max-width: 90px;
-	margin-top: 20px;
+	max-width: 60px;
+	margin-top: 10px;
 }
 
 .trashes {
 	padding: 0 0 10px 0 !important;
 	margin: 0 auto !important;
-	width: 90%;
+	width: 60%;
 	flex-wrap: wrap;
 }
 
