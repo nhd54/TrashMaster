@@ -154,6 +154,8 @@ export class PlayComponent extends CurrentitemComponent implements OnInit {
 		}
 	}
 
+	
+
 	scoreUpdate(x){
 		this.data.changeScore(x);
 	}
