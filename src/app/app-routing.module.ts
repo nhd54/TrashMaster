@@ -15,7 +15,7 @@ import { HighscoreComponent } from "./component/highscore/highscore.component";
 
 
 const routes: Routes = [
-  {path: 'start' , component: StartComponent},
+  {path: '' , component: StartComponent},
   {path: 'menu' , component: MenuComponent},
   {path: 'popup' , component: PopupComponent},
   {path: 'about' , component: AboutComponent},

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LevelService } from './level.service';
 
 @Component({
   selector: 'app-level',

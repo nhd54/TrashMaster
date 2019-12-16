@@ -33,8 +33,9 @@ export class EndgameComponent implements OnInit {
     this.url_score = url.replace(/\/+$/, '').split('=').pop();
     this.score = Number(this.url_score);
 
-    console.log(this.url_score);
-    console.log(this.score);
+    /* if (this.score = NaN) {
+      this.score = 0;
+    } */
 
     /* var stateObj = { foo: "bar" };
     history.pushState(stateObj, "some useless title", replaceUrlWith); */
