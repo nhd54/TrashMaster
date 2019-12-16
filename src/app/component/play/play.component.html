@@ -16,16 +16,7 @@
     </div>
   </header>
 
-  <section class="gamescreen row">
-    <!--Next items-->
-    <div class="nextitem row justify-content-end col-12">
-      <span class="item">
-        <div class="item-img">
-          <app-nextitem class="row justify-content-center"></app-nextitem>
-        </div>
-        <p class="item-text">Next item</p>
-      </span>
-    </div>
+  <section class="gamescreen">
     <!--current item-->
     <ul class="current row justify-content-center align-content-center col-12">
       <li class="currentitem">
@@ -51,8 +42,8 @@
     <!--Trashes-->
     <app-trash class="trash col-12 row"
     id="div2"
-    style="position: absolute; bottom: 0; left: 0; width: 100%"
-      (drop)="drop($event)" 
+    style="position: absolute; left: 0; width: 100%"
+      (drop)="drop($event)"
       (dragover)="allowDrop($event)">
     </app-trash>
   </section>

@@ -12,29 +12,122 @@ export class PlayComponent extends CurrentitemComponent implements OnInit {
 	ciscore : number;
 	lives = 3;
 
+	difficulty;
+
 	currentImg;
 	randNum;
 
 
 	randomNum() {
-		this.randNum = Math.floor((Math.random() * 3) + 1);
+		if(this.difficulty == 'easy') {
+			this.randNum = Math.floor((Math.random() * 3) + 1);
+		}
+		if(this.difficulty == 'medium') {
+			this.randNum = Math.floor((Math.random() * 6) + 1);
+		}
+		if(this.difficulty == 'hard') {
+			this.randNum = Math.floor((Math.random() * 9) + 1);
+		}
 	
 		if(this.randNum == 1) {
 		  document.querySelector("#currentImg1").classList.add("show");
 		  document.querySelector("#currentImg2").classList.remove("show");
 		  document.querySelector("#currentImg3").classList.remove("show");
+		  document.querySelector("#currentImg4").classList.remove("show");
+		  document.querySelector("#currentImg5").classList.remove("show");
+		  document.querySelector("#currentImg6").classList.remove("show");
+		  document.querySelector("#currentImg7").classList.remove("show");
+		  document.querySelector("#currentImg8").classList.remove("show");
+		  document.querySelector("#currentImg9").classList.remove("show");
 		}
 		if(this.randNum == 2) {
-		  document.querySelector("#currentImg2").classList.add("show");
 		  document.querySelector("#currentImg1").classList.remove("show");
+		  document.querySelector("#currentImg2").classList.add("show");
 		  document.querySelector("#currentImg3").classList.remove("show");
+		  document.querySelector("#currentImg4").classList.remove("show");
+		  document.querySelector("#currentImg5").classList.remove("show");
+		  document.querySelector("#currentImg6").classList.remove("show");
+		  document.querySelector("#currentImg7").classList.remove("show");
+		  document.querySelector("#currentImg8").classList.remove("show");
+		  document.querySelector("#currentImg9").classList.remove("show");
 		}
 		if(this.randNum == 3) {
-		  document.querySelector("#currentImg3").classList.add("show");
-		  document.querySelector("#currentImg2").classList.remove("show");
 		  document.querySelector("#currentImg1").classList.remove("show");
+		  document.querySelector("#currentImg2").classList.remove("show");
+		  document.querySelector("#currentImg3").classList.add("show");
+		  document.querySelector("#currentImg4").classList.remove("show");
+		  document.querySelector("#currentImg5").classList.remove("show");
+		  document.querySelector("#currentImg6").classList.remove("show");
+		  document.querySelector("#currentImg7").classList.remove("show");
+		  document.querySelector("#currentImg8").classList.remove("show");
+		  document.querySelector("#currentImg9").classList.remove("show");
 		}
-		/* console.log("the randNum is " + this.randNum); */
+		if(this.randNum == 4) {
+		  document.querySelector("#currentImg1").classList.remove("show");
+		  document.querySelector("#currentImg2").classList.remove("show");
+		  document.querySelector("#currentImg3").classList.remove("show");
+		  document.querySelector("#currentImg4").classList.add("show");
+		  document.querySelector("#currentImg5").classList.remove("show");
+		  document.querySelector("#currentImg6").classList.remove("show");
+		  document.querySelector("#currentImg7").classList.remove("show");
+		  document.querySelector("#currentImg8").classList.remove("show");
+		  document.querySelector("#currentImg9").classList.remove("show");
+		}
+		if(this.randNum == 5) {
+		  document.querySelector("#currentImg1").classList.remove("show");
+		  document.querySelector("#currentImg2").classList.remove("show");
+		  document.querySelector("#currentImg3").classList.remove("show");
+		  document.querySelector("#currentImg4").classList.remove("show");
+		  document.querySelector("#currentImg5").classList.add("show");
+		  document.querySelector("#currentImg6").classList.remove("show");
+		  document.querySelector("#currentImg7").classList.remove("show");
+		  document.querySelector("#currentImg8").classList.remove("show");
+		  document.querySelector("#currentImg9").classList.remove("show");
+		}
+		if(this.randNum == 6) {
+		  document.querySelector("#currentImg1").classList.remove("show");
+		  document.querySelector("#currentImg2").classList.remove("show");
+		  document.querySelector("#currentImg3").classList.remove("show");
+		  document.querySelector("#currentImg4").classList.remove("show");
+		  document.querySelector("#currentImg5").classList.remove("show");
+		  document.querySelector("#currentImg6").classList.add("show");
+		  document.querySelector("#currentImg7").classList.remove("show");
+		  document.querySelector("#currentImg8").classList.remove("show");
+		  document.querySelector("#currentImg9").classList.remove("show");
+		}
+		if(this.randNum == 7) {
+		  document.querySelector("#currentImg1").classList.remove("show");
+		  document.querySelector("#currentImg2").classList.remove("show");
+		  document.querySelector("#currentImg3").classList.remove("show");
+		  document.querySelector("#currentImg4").classList.remove("show");
+		  document.querySelector("#currentImg5").classList.remove("show");
+		  document.querySelector("#currentImg6").classList.remove("show");
+		  document.querySelector("#currentImg7").classList.add("show");
+		  document.querySelector("#currentImg8").classList.remove("show");
+		  document.querySelector("#currentImg9").classList.remove("show");
+		}
+		if(this.randNum == 8) {
+		  document.querySelector("#currentImg1").classList.remove("show");
+		  document.querySelector("#currentImg2").classList.remove("show");
+		  document.querySelector("#currentImg3").classList.remove("show");
+		  document.querySelector("#currentImg4").classList.remove("show");
+		  document.querySelector("#currentImg5").classList.remove("show");
+		  document.querySelector("#currentImg6").classList.remove("show");
+		  document.querySelector("#currentImg7").classList.remove("show");
+		  document.querySelector("#currentImg8").classList.add("show");
+		  document.querySelector("#currentImg9").classList.remove("show");
+		}
+		if(this.randNum == 9) {
+		  document.querySelector("#currentImg1").classList.remove("show");
+		  document.querySelector("#currentImg2").classList.remove("show");
+		  document.querySelector("#currentImg3").classList.remove("show");
+		  document.querySelector("#currentImg4").classList.remove("show");
+		  document.querySelector("#currentImg5").classList.remove("show");
+		  document.querySelector("#currentImg6").classList.remove("show");
+		  document.querySelector("#currentImg7").classList.remove("show");
+		  document.querySelector("#currentImg8").classList.remove("show");
+		  document.querySelector("#currentImg9").classList.add("show");
+		}
 	  }
 
 	
@@ -92,35 +185,36 @@ export class PlayComponent extends CurrentitemComponent implements OnInit {
 
 	changeCurrentItemDataId() {
 		document.querySelector('app-currentitem').setAttribute('data-id', this.randNum);
-		/* console.log("new data-id is = " + document.querySelector('app-currentitem').getAttribute('data-id')); */
 	}
 
 	ngOnInit() {
 		this.data.currentScore.subscribe(score => this.ciscore = score);
 
-		let difficulty;
 		let url = window.location.href;
 
-		difficulty = url.replace(/\/+$/, '').split('=').pop();
+		this.difficulty = url.replace(/\/+$/, '').split('=').pop();
 
 		let medIcons = document.getElementsByClassName('diffMed');
 		let hardIcons = document.getElementsByClassName('diffHard');
 
-		if (difficulty == 'easy') {
+		if (this.difficulty == 'easy') {
 			for (var i = 0; i < medIcons.length; i++) {
 				medIcons[i].classList.add('displayNone');
 				hardIcons[i].classList.add('displayNone');
 			}
-			console.log('Game is set to ' + difficulty);
+			document.querySelector('app-trash').classList.add('trashEasy');
+			console.log('Game is set to ' + this.difficulty);
 		}
-		if (difficulty == 'medium') {
+		if (this.difficulty == 'medium') {
 			for (var i = 0; i < medIcons.length; i++) {
 				hardIcons[i].classList.add('displayNone');
 			}
-			console.log('Game is set to ' + difficulty);
+			document.querySelector('app-trash').classList.add('trashHard');
+			console.log('Game is set to ' + this.difficulty);
 		}
-		if (difficulty == 'hard') {
-			console.log('Game is set to ' + difficulty);
+		if (this.difficulty == 'hard') {
+			document.querySelector('app-trash').classList.add('trashHard');
+			console.log('Game is set to ' + this.difficulty);
 		}
 
 		this.randomNum();

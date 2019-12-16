@@ -47,6 +47,15 @@ input {
     text-align: center;
 }
 
+.btn-primary {
+    margin: 10px auto;
+}
+
+.btn-primary:disabled {
+    background-color: #6a6a6a;
+    border-color: #6a6a6a;
+}
+
 /* tablet version */
 
 @media (min-width: 768px) {

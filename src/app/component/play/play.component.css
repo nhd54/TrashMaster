@@ -142,3 +142,15 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
+.gamescreen {
+	margin-top: 50px;
+}
+
+.trashEasy {
+	bottom: 5%;
+}
+
+.trashHard {
+	bottom: 0;
+}
