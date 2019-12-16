@@ -20,6 +20,12 @@
 	max-width: 120px;
 	}
 
+	.trashes {
+		flex-wrap: nowrap;
+		width: 90%;
+		padding: 0;
+	}
+
 }
 
 @media (min-width: 992px) {

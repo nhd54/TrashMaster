@@ -172,3 +172,14 @@ body {
 	0% {box-shadow: 0 0 10px 10px red}
 	100% {box-shadow: 0 0 0 0 red}
 }
+
+@media only screen and (min-width: 769px) {  
+	.logo img {
+		width: 15%;
+	}
+
+	.gameinfo, .border-bot {
+		width: 60%;
+		margin: 0 auto !important;
+	}
+}
