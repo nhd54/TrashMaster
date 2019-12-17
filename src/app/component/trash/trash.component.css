@@ -1,39 +1,38 @@
 
 .trash--img {
 	max-width: 60px;
-	margin-top: 10px;
 }
 
-.trashes {
-	padding: 0 0 10px 0 !important;
-	margin: 0 auto !important;
-	width: 60%;
-	flex-wrap: wrap;
+.dropoffs {
+	height: 100%;
+	list-style: none;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: 33% 33% 33%;
+	grid-template-areas: 
+		"g1 g2 g3"
+		"g4 g5 g6"
+		"g7 g8 g9";
 }
+
+#grid1 {grid-area: g4} #grid2 {grid-area: g5} #grid3 {grid-area: g6}
+#grid4 {grid-area: g7} #grid5 {grid-area: g8} #grid6 {grid-area: g9}
+#grid7 {grid-area: g1} #grid8 {grid-area: g2} #grid9 {grid-area: g3}
 
 .displayNone {
 	display: none !important;
 }
 
 @media (min-width: 768px) {
-	.trash--img {
-	max-width: 120px;
+	.dropoffs {
+		width: 40%;
+		margin: 0 auto !important; 
 	}
-
-	.trashes {
-		flex-wrap: nowrap;
-		width: 90%;
-		padding: 0;
-	}
-
-}
-
-@media (min-width: 992px) {
 
 	.trash--img {
-	max-width: 200px;
+		width: auto;
+		max-height: 80%;
 	}
-
-
 }
 

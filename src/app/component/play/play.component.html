@@ -1,4 +1,4 @@
-<main class="container-fluid tm-background">
+<main class="tm-background">
   <header>
     <div class="justify-content-center logo border-bot row">
       <img src="../../../assets/img/logo.png" alt="" />
@@ -35,18 +35,16 @@
         ></app-currentitem>
       </li>
     </ul> 
-
+  </section>
       
  
 
     <!--Trashes-->
-    <app-trash class="trash col-12 row"
-    id="div2"
-    style="position: absolute; left: 0; width: 100%"
+    <app-trash
+      id="div2"
       (drop)="drop($event)"
       (dragover)="allowDrop($event)">
     </app-trash>
-  </section>
 </main>
 
 

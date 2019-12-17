@@ -1,16 +1,37 @@
 main {
-	max-height: 100vh;
+	height: 100vh; width: 100%;
+	position: relative;
+}
+
+header {
+	height: 40vh; width: 100%;
+	position: absolute;
+	top: 0; left: 0;
+}
+
+.logo, .gameinfo {
+	height: 50% !important;
+}
+
+.gameinfo div {
+	height: 100%;
+}
+
+app-time, app-score {
+	margin: auto !important; 
 }
 
 .gameicons {
 	padding: 0 !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .border-bot {
 	border-bottom: 4px solid #f6a117;
 	margin: 0 !important;
-	padding-bottom: 10px;
-	padding-top: 10px;
 }
 
 .item-img {
@@ -27,9 +48,7 @@ main {
 }
 
 .logo img {
-	width: 32%;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	max-height: 100%;
 }
 
 ul {
@@ -42,9 +61,10 @@ ul {
 	margin: 0 !important;
 }
 
-.trash {
-	padding: 0 !important;
-	margin: 0 !important;
+app-trash {
+	position: absolute;
+	bottom: 0; left: 0;
+	width: 100%; height: 40vh;
 }
 
 .buttons {
@@ -144,7 +164,11 @@ body {
 }
 
 .gamescreen {
-	margin-top: 50px;
+	position: absolute;
+	bottom: 40vh; left: 0;
+	width: 100%;
+	height: 20vh;
+
 }
 
 .trashEasy {
@@ -174,12 +198,8 @@ body {
 }
 
 @media only screen and (min-width: 769px) {  
-	.logo img {
-		width: 15%;
-	}
-
-	.gameinfo, .border-bot {
-		width: 60%;
-		margin: 0 auto !important;
+	header {
+		padding: 0 20%;
+		height: 30vh;
 	}
 }
