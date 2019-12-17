@@ -21,7 +21,7 @@ export class TimeComponent implements OnInit {
 
 	ngOnInit() {
 		this.data.currentScore.subscribe(score => this.score = score);
-		/* this.interval = setInterval(() => {
+		this.interval = setInterval(() => {
 			if (this.seconds == 0 && this.minutes == 0) {
 				window.location.href = '/endgame/?score=' + this.score;
 			} else if (this.seconds == 0) {
@@ -35,6 +35,6 @@ export class TimeComponent implements OnInit {
 					this.secondsshwon = '0' + this.seconds;
 				}
 			}
-		}, 1000); */
+		}, 1000);
 	}
 }
