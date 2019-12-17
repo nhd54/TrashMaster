@@ -29,3 +29,7 @@ export class HighscoreComponent implements OnInit {
   }
 
 }
+
+
+
+

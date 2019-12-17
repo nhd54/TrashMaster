@@ -38,3 +38,4 @@ export class TimeComponent implements OnInit {
 		}, 1000);
 	}
 }
+
