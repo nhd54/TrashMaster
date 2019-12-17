@@ -58,7 +58,11 @@ h1 {
 }
 
 @media (min-width: 768px) {
-
+    .inner-container {
+        width: 60%;
+        margin: 0 auto !important;
+    }
+    
 	.btn-primary {
 		margin: 10px;
 		width: 350px;
