@@ -1,10 +1,10 @@
 <div class="body">
   <!---------------------------------------Burger Menu--------------------------------------->
-  <div class="burger-menu">
+  <div class="burger-menu" (click)="gotoMenu()">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <i class="fa fa-bars"></i>
+          <i class="fa fa-bars"></i> 
         </div>
       </div>
     </div>
@@ -22,7 +22,8 @@
         <div class="col-12">
           <p class="headline"><b>Welcome to the game!</b></p>
           <p class="text">
-            Do you want to become the unbeatable trash master and rule it all?
+            Do you want to become the unbeatable trash master and rule it
+            all?<br />
             Click on the button below to start the game.
           </p>
         </div>
@@ -34,15 +35,14 @@
             value=""
             placeholder="Your name"
           />
-          <a href="about">
-            <button
-              type="button"
-              (click)="saveUsername()"
-              class="btn btn-primary"
-            >
-              Start
-            </button></a
+          <button
+            type="button"
+            (click)="saveUsername()"
+            class="btn btn-primary"
+            disabled
           >
+            Start
+          </button>
         </div>
       </div>
     </div>

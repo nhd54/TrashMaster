@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
-
 .body{
     background-color: #1f1436;
     width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .burger-menu{
@@ -14,9 +17,6 @@
 
 .menu{
     text-align: center;
-    padding-top: 50px;
-    font-family: 'Nunito Sans', sans-serif;
-
 }
 
 .btn-primary {

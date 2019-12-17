@@ -1,18 +1,21 @@
 .icon {
     padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
 .icon span {
-    font-size: 2em;
+    display: inline-block;
+    font-size: 1.7em;
     font-weight: bold;
     color: #EF492E;
+    margin-top: 7.5px;
     position: absolute;
-    left: calc(50% - 0.6em);
-    top: calc(50% - 0.4em);
 }
 
 #scoreText {
     text-align: center;
-    padding-left: 10px;
 }

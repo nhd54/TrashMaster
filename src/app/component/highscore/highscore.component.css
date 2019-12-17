@@ -53,6 +53,10 @@ h1 {
     margin: 10px;
 }
 
+.burger-menu {
+    cursor: pointer;
+}
+
 @media (min-width: 768px) {
 
 	.btn-primary {

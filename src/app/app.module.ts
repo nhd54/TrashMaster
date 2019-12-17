@@ -15,7 +15,6 @@ import { CountdownComponent } from './component/countdown/countdown.component';
 import { GameComponent } from './component/game/game.component';
 import { LifeComponent } from './component/life/life.component';
 import { ScoreComponent } from './component/score/score.component';
-import { NextitemComponent } from './component/nextitem/nextitem.component';
 import { CurrentitemComponent } from './component/currentitem/currentitem.component';
 import { TrashComponent } from './component/trash/trash.component';
 import { TimeComponent } from './component/time/time.component';
@@ -51,7 +50,6 @@ var firebaseConfig = {
 		GameComponent,
 		LifeComponent,
 		ScoreComponent,
-		NextitemComponent,
 		CurrentitemComponent,
 		TrashComponent,
 		TimeComponent,

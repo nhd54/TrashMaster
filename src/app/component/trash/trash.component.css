@@ -1,17 +1,39 @@
 
 .trash--img {
-	max-width: 90px;
-	margin-top: 20px;
+	max-width: 60px;
+	margin-top: 10px;
 }
 
 .trashes {
 	padding: 0 0 10px 0 !important;
 	margin: 0 auto !important;
-	width: 90%;
+	width: 60%;
 	flex-wrap: wrap;
 }
 
 .displayNone {
 	display: none !important;
+}
+
+@media (min-width: 768px) {
+	.trash--img {
+	max-width: 120px;
+	}
+
+	.trashes {
+		flex-wrap: nowrap;
+		width: 90%;
+		padding: 0;
+	}
+
+}
+
+@media (min-width: 992px) {
+
+	.trash--img {
+	max-width: 200px;
+	}
+
+
 }
 

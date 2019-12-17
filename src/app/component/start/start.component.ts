@@ -14,12 +14,31 @@ export class StartComponent implements OnInit {
   saveUsername() {
     this.username = (<HTMLInputElement>document.getElementById('usernameInput')).value;
     console.log(this.username);
-    localStorage.setItem("username", JSON.stringify(this.username));
+    localStorage.setItem("username", this.username);
+    window.location.href = "/about";
+  }
+
+  checkValue() {
+    if((<HTMLInputElement>document.getElementById('usernameInput')).value != "") {
+      document.querySelector('.btn').removeAttribute('disabled');
+    } else {
+      document.querySelector('.btn').setAttribute('disabled', 'disabled');
+    }
+  }
+
+  gotoMenu() {
+    window.location.href = "/menu";
   }
 
   ngOnInit() {
+    let test = localStorage.getItem("username");
+    this.username = test;
     console.log(this.username);
+    if(this.username != undefined) {
+      document.querySelector('input').value = this.username;
+    }
+
+    setInterval(this.checkValue, 1000);
   }
 
 }
-

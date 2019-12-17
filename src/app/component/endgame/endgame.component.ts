@@ -41,7 +41,7 @@ export class EndgameComponent implements OnInit {
     history.pushState(stateObj, "some useless title", replaceUrlWith); */
 
     this.username = localStorage.getItem('username');
-    this.username = JSON.parse(this.username);
+    //this.username = JSON.parse(this.username);
     console.log(this.username);
 
     this.submit();

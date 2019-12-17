@@ -19,9 +19,13 @@ export class HighscoreComponent implements OnInit {
 
   constructor(private afs: AngularFirestore) { }
 
+  gotoMenu() {
+    window.location.href = "/menu";
+  }
+
   ngOnInit() {
     this.username = localStorage.getItem('username');
-    this.username = JSON.parse(this.username);
+    //this.username = JSON.parse(this.username);
     console.log(this.username);
 
     this.usersCol = this.afs.collection('users', ref => ref.orderBy('score', "desc"));

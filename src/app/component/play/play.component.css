@@ -142,3 +142,44 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
+.gamescreen {
+	margin-top: 50px;
+}
+
+.trashEasy {
+	bottom: 5%;
+}
+
+.trashHard {
+	bottom: 0;
+}
+
+.correctAnim {
+	animation: correct 500ms;
+}
+
+.wrongAnim {
+	animation: wrong 500ms;
+}
+
+@keyframes correct {
+	0% {box-shadow: 0 0 10px 10px yellow}
+	100% {box-shadow: 0 0 0 0 yellow}
+}
+
+@keyframes wrong {
+	0% {box-shadow: 0 0 10px 10px red}
+	100% {box-shadow: 0 0 0 0 red}
+}
+
+@media only screen and (min-width: 769px) {  
+	.logo img {
+		width: 15%;
+	}
+
+	.gameinfo, .border-bot {
+		width: 60%;
+		margin: 0 auto !important;
+	}
+}
